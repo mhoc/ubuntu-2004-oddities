@@ -43,4 +43,4 @@
 
 - Default "Videos" application cannot play some `.mkv` files which VLC is fully capable of playing.
 
-- Firefox refuses to play most web videos, despite all cloud-source third-party super-duper-install options being selected on system install. Installing the `libavcodec-extra` via `apt` resolves this.
+- Firefox refuses to play most web videos, despite all cloud-source third-party super-duper-install options being selected on system install (e.g. Twitch, YouTube). Installing the `libavcodec-extra` via `apt` resolves this.
