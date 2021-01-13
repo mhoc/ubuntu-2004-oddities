@@ -1,4 +1,4 @@
-# System
+## System
 
 - Custom-built Desktop
 - Ryzen 7 2700
@@ -9,11 +9,11 @@
 - Primary monitor: Viotek 34" 3440x1440 ultrawide @ 100hz (displayport)
 - Secondary monitor: Asus 27" 1440x2560 @ 165hz (configured rotate-right) (displayport)
 
-# Installation
+## Installation
 
 - Installation consistently reports failure when selecting "Install third party drivers" during setup. However, rebooting and removing the flash drive results in a functional installation. This is a known issue, and has existed at least since release.
 
-# Graphics
+## Graphics
 
 - System was installed with `xserver-xorg-video-nouveau` drivers by default. Attempting to install `nvidia-driver-460` (latest at time) results in an incomprehensible error message. Installing `nvidia-driver-450` was successful, then upgrading to `nvidia-driver-460` was successful.
 
@@ -25,16 +25,18 @@
 
 - Second monitor is configured in a vertical rotate-right state. Upon every reboot, x-server defaults to rotate-left instead of rotate-right.
 
-# Audio
+## Audio
 
 - System does not appear to have a concept of "preferred" audio devices, and when a device goes missing it always defaults back to a present device, even when the previously "preferred" device reappears. This causes heartache for devices like wireless headphones, which are frequently turned on and off to preserve battery (though, I was happy to see the Logitech G Pro X headphones otherwise function without issue with no additional configuration, including the volume wheel, which never worked properly on Windows despite all necessary drivers being installed).
 
-# Snap
+## Snap
 
 - Any application installed via Snap, such as Slack, will create a second Firefox profile when clicking hyperlinks. Known issue. Permanently fixable by deleting the extra profile in Firefox's `about:profiles`.
 
 - First startup of any Snap application on clean boot can take 10 to 15 seconds. Subsequent startups tend to be faster.
 
-# Non-Snap Apps
+## Non-Snap-Related App Issues
 
 - Steam (installed via .deb from https://steampowered.com/) refused to launch after initial install. Hard reboot fixes.
+
+- Andorid Studio (both Snap and .tar.gz from Google) fails to start Android virtual machines, with the error "process was killed".
