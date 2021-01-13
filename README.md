@@ -21,9 +21,9 @@
 
 - Lock screen immediately turns monitors off, despite all power save options being disabled in settings.
 
-- Some level of power save sleep causes second monitor to never receive an image, including power-cycling the monitor. Hard reboot is only fix I've found.
+- Some level of power save sleep causes second monitor to never receive an image, including power-cycling the monitor. Hard reboot and disabling power saving features are the only fixes I've found.
 
-- Second monitor is configured in a vertical rotate-right state. Upon every reboot, x-server defaults to rotate-left instead of rotate-right.
+- Second monitor is configured in a vertical rotate-right state. Upon every reboot or screen lock, x-server defaults to rotate-left instead of rotate-right.
 
 ## Audio
 
