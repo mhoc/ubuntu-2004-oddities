@@ -35,12 +35,15 @@
 
 - First startup of any Snap application on clean boot can take 10 to 15 seconds. Subsequent startups tend to be faster.
 
+- `node:12.19.0` (latest in `12/stable` channel on 2021-01-13 despite a high severity CVE in `12.20.0` discovered last week): running `mocha` on an internal, relatively typical nodejs application causes many tests to fail due to 2 second timeout. No issue on any other platform, or in non-Snap nodejs.
+
 ## Non-Snap-Related App Issues
 
-- Steam (installed via .deb from https://steampowered.com/) refused to launch after initial install. Hard reboot fixes.
+- Andorid Studio (both Snap and .tar.gz from Google): fails to start Android virtual machines, with the error "process was killed".
 
-- Andorid Studio (both Snap and .tar.gz from Google) fails to start Android virtual machines, with the error "process was killed".
+- Firefox: refuses to play most web videos, despite all closed-source third-party super-duper-install options being selected on system install (e.g. Twitch, YouTube). Installing the `libavcodec-extra` via `apt` resolves this.
 
-- Default "Videos" application cannot play some `.mkv` files which VLC is fully capable of playing.
+- Steam (installed via .deb from https://steampowered.com/): refused to launch after initial install. Hard reboot fixes.
 
-- Firefox refuses to play most web videos, despite all cloud-source third-party super-duper-install options being selected on system install (e.g. Twitch, YouTube). Installing the `libavcodec-extra` via `apt` resolves this.
+- Videos: Cannot play some `.mkv` files which VLC is fully capable of playing; window appears for a split second before disappearing.
+
