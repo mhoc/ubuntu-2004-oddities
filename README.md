@@ -17,7 +17,7 @@
 
 - System was installed with `xserver-xorg-video-nouveau` drivers by default. Attempting to install `nvidia-driver-460` (latest at time) results in an incomprehensible error message. Installing `nvidia-driver-450` was successful, then upgrading to `nvidia-driver-460` was successful.
 
-- Built-in Ubuntu display configuration is wholly disfunctional, causing the display space of both monitors to partially overlap instead of extend. Very trippy, like half-mirror, half-extend, kind of cool. The nvidia driver control panel functions correctly.
+- Built-in Ubuntu display configurator is wholly disfunctional, causing the display space of both monitors to partially overlap instead of extend. Very trippy, like half-mirror, half-extend, kind of cool. The nvidia driver control panel functions correctly.
 
 - Lock screen immediately turns monitors off, despite all power save options being disabled in settings.
 
