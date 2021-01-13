@@ -40,3 +40,7 @@
 - Steam (installed via .deb from https://steampowered.com/) refused to launch after initial install. Hard reboot fixes.
 
 - Andorid Studio (both Snap and .tar.gz from Google) fails to start Android virtual machines, with the error "process was killed".
+
+- Default "Videos" application cannot play some `.mkv` files which VLC is fully capable of playing.
+
+- Firefox refuses to play most web videos, despite all cloud-source third-party super-duper-install options being selected on system install. Installing the `libavcodec-extra` via `apt` resolves this.
