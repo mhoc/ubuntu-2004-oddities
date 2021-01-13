@@ -25,6 +25,8 @@
 
 - Second monitor is configured in a vertical rotate-right state. Upon every reboot or screen lock, x-server defaults to rotate-left instead of rotate-right.
 
+- Monitor refresh rate options for both monitors are presented "strangely" e.g. 60hz presented as 59.97hz. Unclear if "60hz" is a UX optimization Windows/Mac make which covers up a true underlying refresh rate (e.g. "59.97hz"), or if Linux/Ubuntu have a different way of calculating that, or if Linux/Ubuntu is just incapable of reaching the true refresh rate.
+
 ## Audio
 
 - System does not appear to have a concept of "preferred" audio devices, and when a device goes missing it always defaults back to a present device, even when the previously "preferred" device reappears. This causes heartache for devices like wireless headphones, which are frequently turned on and off to preserve battery (though, I was happy to see the Logitech G Pro X headphones otherwise function without issue with no additional configuration, including the volume wheel, which never worked properly on Windows despite all necessary drivers being installed).
