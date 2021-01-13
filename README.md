@@ -39,7 +39,7 @@
 
 - `go:1.15.6` (unverified package, classic confinement): visual studio code (verified snap, classic confinement) go language extensions unable to locate Go binary, with error `cached Go version ({"binaryPath":"/snap/bin/go","version":""}) is invalid, recomputing | unable to determine version from the output of "/snap/bin/go version": "undefined"`. 
 
-- `node:12.19.0` (verified package by `iojs`, classic confinement) (latest in `12/stable` channel on 2021-01-13 despite a high severity CVE in `12.20.0` discovered last week): running `mocha` on an internal, relatively typical nodejs application causes many tests to fail due to 2 second timeout. No issue on any other platform, or in non-Snap nodejs.
+- `node:12.19.0` (verified package by `iojs`, classic confinement) (latest in `12/stable` channel on 2021-01-13 despite a high severity CVE in `12.20.0` remediated in `12.20.1` last week): running `mocha` on an internal, relatively typical nodejs application causes many tests to fail due to 2 second timeout. No issue on any other platform, or in non-Snap nodejs.
 
 ## Non-Snap-Related App Issues
 
