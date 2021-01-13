@@ -25,7 +25,7 @@
 
 - Second monitor is configured in a vertical rotate-right state. Upon every reboot or screen lock, x-server defaults to rotate-left instead of rotate-right.
 
-- Monitor refresh rate options for both monitors are presented "strangely" e.g. 60hz presented as 59.97hz. Unclear if "60hz" is a UX optimization Windows/Mac make which covers up a true underlying refresh rate (e.g. "59.97hz"), or if Linux/Ubuntu have a different way of calculating that, or if Linux/Ubuntu is just incapable of reaching the true refresh rate.
+- Monitor refresh rate options for Asus 27" are presented "strangely" e.g. 60hz presented as 59.97hz. Unclear if "60hz" is a UX optimization Windows/Mac make which covers up a true underlying refresh rate (e.g. "59.97hz"), or if Linux/Ubuntu have a different way of calculating that, or if the monitor is strange, or if Linux/Ubuntu is just incapable of reaching the true refresh rate. Issue is not present on Viotek 34" monitor. 
 
 ## Audio
 
