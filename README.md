@@ -35,7 +35,11 @@
 
 - First startup of any Snap application on clean boot can take 10 to 15 seconds. Subsequent startups tend to be faster.
 
-- `node:12.19.0` (latest in `12/stable` channel on 2021-01-13 despite a high severity CVE in `12.20.0` discovered last week): running `mocha` on an internal, relatively typical nodejs application causes many tests to fail due to 2 second timeout. No issue on any other platform, or in non-Snap nodejs.
+- `aws-cli` (verified package by `Amazon Web Services`): `latest/stable` has not been updated in 2.5 years. [No longer officially maintained by AWS](https://github.com/aws/aws-cli/issues/5142#issuecomment-698565229). Some [evidence](https://github.com/aws/aws-cli/issues/3065#issuecomment-354831511) around their github that current employees on the project don't know who maintains it, or rather, no longer maintains it. Why does Snapcraft still have that package marked as "verified by Amazon Web Services"? There's no evidece Amazon ever maintained it; did Snapcraft give a Verified badge to an individual pretending to be AWS? Very concerning security issue.
+
+- `go:1.15.6` (unverified package, classic confinement): visual studio code (verified snap, classic confinement) go language extensions unable to locate Go binary, with error `cached Go version ({"binaryPath":"/snap/bin/go","version":""}) is invalid, recomputing | unable to determine version from the output of "/snap/bin/go version": "undefined"`. 
+
+- `node:12.19.0` (verified package by `iojs`, classic confinement) (latest in `12/stable` channel on 2021-01-13 despite a high severity CVE in `12.20.0` discovered last week): running `mocha` on an internal, relatively typical nodejs application causes many tests to fail due to 2 second timeout. No issue on any other platform, or in non-Snap nodejs.
 
 ## Non-Snap-Related App Issues
 
